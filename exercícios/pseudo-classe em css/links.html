@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(46, 4, 13);
+            color: beige;
+        }
+        a{
+            color: crimson;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: azure;
+            text-decoration: underline;
+        }
+        a:visited{ /*se o site já foi visitado...*/
+            color: lightcoral;
+        }
+        a:active{ /*quando clicar no link...*/
+            color: burlywood;
+        }
+
+        .especial::before{ /*antes de todos os links...*/
+            content: '-> ';
+            font-weight: normal;
+            color: blanchedalmond;
+        }
+
+        .especial::after{ /*depois de todos os links...*/
+            content:' <-';
+            font-weight: normal;
+            color: blanchedalmond;
+        }
+    </style>
+    <title>links</title>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="#" target="_blank">github</a></li>
+        <li><a href="https://www.youtube.com/@LivesAlanzoka" target="_blank" class="especial">canal do Youtube</a></li>
+        <li><a href="https://www.nuuvem.com/">site da nuuvem</a></li>
+    </ul>
+</body>
+</html>

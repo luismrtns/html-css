@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        video{
+            border-radius: 4%;
+        }
+        iframe{
+            border-radius: 4%;
+        }
+    </style>
+    <title>Videos em hospedagem própria</title>
+</head>
+<body>
+    <h1>inserindo videos hospedados localmente</h1>
+    <p>este video está hospedado no meu próprio servidor</p>
+    <video controls width="500px">
+        <!--videos hospedados no prórpio site podem consumir muita banda larga e o site pode ficar lento de acordo com a quantidade de usuarios simultâneos-->
+        <!--é recomendado começar sempre pelo menor arquivo-->
+        <source src="midia/video-tv.mp4" type="video/mp4">
+        <source src="midia/video-tv.m4v" type="video/mp4">
+        <source src="midia/video-tv.ogv" type="video/ogg">
+        <source src="midia/video-tv.webm" type="video/webm">
+        <p>o navegador não suporta reprodução de videos</p>
+        <!--se não rodar nenhum arquivo, vai mostrar essa mensagem-->
+    </video>
+    <h1>inserindo vídeos do YouTube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/K5i6tjtVDkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--insere um vídeo do YouTube direto no site, sem precisar ter o vídeo na sua máquina-->
+</body>
+</html>

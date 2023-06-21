@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>tente abrir esse site em diversos dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--se a largura da tela for menor que 750 pixels, a imagem foto-p.png deve ser carregada.-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--se a largura da tela for menor que 1050 pixels, a imagem foto-m.png deve ser carregada.-->
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+        <!--se nenhuma das "condições" acima for satisfeita, vai carregar a imagem G-->
+    </picture>
+    <h1>reproduzindo audios</h1>
+    <p>vamos aprender como colocar um audio no site</p>
+    <!--<audio src="midia/straw_squeak.mp3" controls></audio>-->
+    <audio preload="metadata" controls>
+        <!--metadata é para carregar umas informações do audio antes de começar a baixar-->
+        <!--none só vai carregar o audio quando o usuario apertar o play-->
+        <!--existem 3 tipos de audio: MP3, OGG e WAV-->
+        <source src="midia/straw_squeak.mp3" type="audio/mpeg">
+        <source src="midia/straw_squeak.ogg" type="audio/ogg">
+        <source src="midia/straw_squeak.wav" type="audio/wav"> <!--NÃO USAR MUITO, POIS É MUITO PESADO-->
+    </audio>
+    <p>se o audio não tocar, seu navegador não tem suporte para audios</p>
+    <p>aqui você pode <a href="midia/straw_squeak.mp3" download="midia/straw_squeak.mp3" type="audio/mpeg">baixar o áudio</a></p>
+</body>
+</html>

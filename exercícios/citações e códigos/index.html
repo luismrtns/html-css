@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras formatações</title>
+</head>
+<body style="background-color: burlywood;">
+    <h1>outras formatações</h1>
+    <h2>código-fonte/pré formatação</h2>
+    <p>o comando <code>document.getElementById('teste')</code> é escrito em linguagem JS</p><!--é bom para ler códigos-->
+    <pre> <!--mostra as indentações, os espaços e etc, em formato de código mesmo-->
+        <code> <!--mostra o texto em uma fonte de codigo, para uma leitura melhor-->
+    num = int(input('digite um número: '))
+    if num % 2 == 0:
+        print('o número é par')
+    else:
+        print('o número é ímpar')
+        </code>
+    </pre>
+    <h2>citações simples</h2>
+    <p>como diria uma pessoa imbecil: <q>corinthiano de verdade não vive de títulos, vive de corinthians</q></p>
+    <!--a tag q é bom usar para dar um sentido de citação, é mais recomendado que usar simplesmente as aspas-->
+    <h2>citações completas</h2>
+    <p>segundo jeff noble , no seu livro sobre HTML para leigos:</p>
+    <blockquote cite=> <!--vai fazer uma indentação na citação-->
+    <!--dentro do cite pode ter um link relacionado a origem da citação, arquivo oficial e etc-->
+        a diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto
+    </blockquote>
+    <h2>abreviações</h2>
+    <p>estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets ">CSS</abbr></p>
+    <!--vai mostrar o significado da abreviação quando o mouse estiver em cimca da palavra-->
+    <h2>texto invertido</h2>
+    <p><bdo dir="rtl">corinthians tá uma merda</bdo></p> <!--rtl é "da direita para esquerda" e ltr é o contrário-->
+</body>
+</html>
