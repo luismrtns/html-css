@@ -67,7 +67,6 @@ section > p{
 }
 
 section.imagem{
-    background-color: #eec77e68;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.404);
     background-size: cover;
     background-attachment: fixed;
