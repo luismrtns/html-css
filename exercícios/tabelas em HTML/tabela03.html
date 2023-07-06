@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        th, td{
+            text-align: center;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        th{
+            background-color: grey;
+            color: whitesmoke;
+        }
+
+        .cnome{
+            background-color: burlywood;
+            color: whitesmoke;
+        }
+
+        .cgrupo{
+            background-color: rgba(255, 127, 80, 0.713);
+        }
+    </style>
+    <title>exercício de tabela</title>
+</head>
+<body>
+    <h1>exercício de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3"> <!--vai configurar n colunas-->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>55</td>
+            <td>Engenheira</td>
+        </tr>
+        <tr>
+            <td>Samia</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Educadora Física</td>
+        </tr>
+        <tr>
+            <td>Luís</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Michel</td>
+            <td>M</td>
+            <td>39</td>
+            <td>Secretário</td>
+        </tr>
+    </table>
+</body>
+</html>
