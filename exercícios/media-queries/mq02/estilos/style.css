@@ -8,7 +8,7 @@
 }
 
 html, body{
-    background-color: black;
+    background-color: #233eff;
     width: 100vw;
     height: 100vh;
     background-size: contain;
@@ -16,6 +16,6 @@ html, body{
 }
 
 h1{
-    color: burlywood;
+    color: whitesmoke;
     padding: 10px;
 }
