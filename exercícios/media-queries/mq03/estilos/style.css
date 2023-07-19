@@ -29,8 +29,8 @@
         background-position: center bottom;
     }
 }
-/*declarações paisagem*/
 
+/*declarações paisagem*/
 @media screen and (orientation: landscape) {
     body{
         background-image: url(../imagens/cev-landscape.jpg);
