@@ -42,11 +42,10 @@ menu{
 
 menu > ul{
     list-style-type: none;
-    text-align: center;
 }
 
 menu li{
-    display: inline-block;
+    display: block;
 }
 
 menu a{
@@ -54,7 +53,8 @@ menu a{
     margin: auto;
     display: block;
     padding: 15px;
-    color: #59252E;
+    background-color: #261724;
+    color: #D9B282;
     text-decoration: none;
     border-top: 2px solid #59252e;
     transition: .3s;
